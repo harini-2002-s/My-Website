@@ -1,0 +1,269 @@
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1 {
+text-align: left; /* Left-align the name */
+color: #000; /* Dark grey text color */
+font-size: 3em; /* Font size for the name */
+margin-left: 20px; /* Add some space from the left edge */
+margin-bottom: 5px;
+margin-top:70px;
+}
+
+p {
+text-align: left; /* Left-align the name */
+color: #000; /* Dark grey text color */
+font-size: 1em; /* Font size for the name */
+margin-left: 20px; /* Add some space from the left edge */
+margin-top: 0px;
+}
+
+.about-me {
+    width: 60%; /* Control the width of the About Me section */
+    margin-left: 20px; /* Ensure it starts at the left edge */
+    margin-top: 0px; /* Add some space above the About Me section */
+}
+.about-me {
+  position: relative;
+  padding-left: 20px; /* Adjust this for the spacing */
+  text-align: justify;
+  color:#000
+}
+
+.about-me::before {
+  content: '';
+  position: absolute;
+  left: 20px;
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Adjust the width of the line */
+  background-color: #000; /* Change the color as needed */
+}
+h2 {
+    text-align: left;
+    color: #000;
+    font-size: 1.5em;
+    margin-left: 20px;
+    margin-top:15px;
+    margin-bottom:0px;
+}
+
+p {
+    text-align: justify;
+    color: #000;
+    font-size: 1.1em;
+    margin-left: 20px;
+    margin-top: 0px;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    padding: 0;
+    background-color: #f7f7e7; /* Optional background color */
+    .about-me {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .about-me {
+        display: flex;
+        color: #000;
+        justify-content: space-between; /* Pushes the image to the far right */
+        text-align: justify;
+        align-items: flex-start; /* Aligns the text and image to the top */
+    }
+
+    .text {
+        flex: 1; /* Keeps the text on the left without squeezing it */
+    }
+
+    .profile-pic {
+        position: absolute; /* Makes the image independent of the flow */
+        top: 40px; /* Aligns the image to the top of the "About Me" section */
+        right: -340px; /* Pushes the image to the far right of the page */
+        max-width: 300px; /* Sets a maximum width for the image */
+        height: auto; /* Maintains the aspect ratio */
+    }
+
+
+    #education-section {
+      margin-top: 100px; /* Adds spacing above the section */
+      padding: 20px; /* Adds padding inside the section */
+  }
+
+  #education-section h2 {
+      font-size: 24px; /* Heading size */
+      margin-bottom: 10px; /* Spacing below the heading */
+  }
+
+  #education-section p {
+      line-height: 1.6; /* Improves text readability */
+      color: #000
+  }
+
+#education-section {
+    margin-top: -20px; /* Reduce the space above the heading */
+}
+
+.section-divider {
+    border: none; /* Removes default border */
+    border-top: 1px solid #ccc; /* Creates a thin gray line */
+    margin: 10px 0; /* Adds spacing above and below the line */
+}
+
+
+#projects-section {
+    margin-top: 20px; /* Adds space above the section */
+    text-align: justify;; /* Matches alignment with the heading */
+    padding: 20px; /* Adds padding inside the section */
+    margin-left: 10px;
+    position: relative; /* Ensures alignment for buttons near heading */
+}
+
+#projects-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px; /* Adds space below the heading */
+}
+
+#projects-section ul {
+    list-style-type: disc; /* Sets bullet points as discs */
+    padding-left: 40px; /* Adds space before the bullets for proper alignment */
+    margin: 0;
+}
+
+#projects-section li {
+    margin-bottom: 20px; /* Adds space between projects */
+    line-height: 1.8; /* Improves readability for multi-line descriptions */
+}
+
+#projects-section li strong {
+    display: block; /* Ensures titles are separated for better readability */
+    font-weight: bold;
+    margin-bottom: 5px; /* Adds spacing below project titles */
+}
+
+.top-bar {
+    position: fixed; /* Keeps it fixed at the top */
+    top: 0; /* Aligns it to the top of the page */
+    left: 0; /* Extends to the left edge */
+    width: 100%; /* Extends across the entire width of the screen */
+    height: 60px; /* Adjust height as needed */
+    background-color: #f7f7e7; /* Light brown with slight opacity */
+    z-index: 998; /* Places it below buttons but above other content */
+}
+
+.top-right-nav {
+    position: fixed;
+    top: 10px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+    text-align: right; /* Aligns content to the right */
+    z-index: 1000; /* Ensures the buttons are above all other content */
+    padding: 5px; /* Adds padding to avoid overlap */
+    display: flex;
+}
+
+.nav-button {
+    display: inline-block; /* Ensures buttons sit side by side */
+    background-color: rgba(245, 222, 179, 0.8) /* 80% opacity */; /* Opaque white background */
+    color: #000; /* Light brown text */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    z-index: 1000;
+    font-size: 16px;
+    padding: 5px 15px; /* Padding for better click area */
+    border: 1px solid #000; /* Light brown border */
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 5px; /* Adds space between the button and the line */
+    top:20px;
+    margin-left: 10px; /* Adds space between buttons */
+}
+
+.nav-button:hover {
+    background-color: #a0522d; /* Light brown background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.nav-divider {
+    position: fixed;
+    z-index: 999;
+    top: 60px; /* Adjust this value to align below the buttons */
+    left: 0; /* Start the line from the left edge of the page */
+    width: 100%; /* Make the line span the entire width of the page */
+    border: none; /* Removes default border styling */
+    border-top: 1px solid #000; /* Creates a thin black line */
+    margin: 0; /* Removes extra margin */
+}
+
+#coursework-section {
+  margin-top: 100px; /* Adds spacing above the section */
+  padding: 20px; /* Adds padding inside the section */
+}
+
+#coursework-section h2 {
+  font-size: 24px; /* Heading size */
+  margin-bottom: 10px; /* Spacing below the heading */
+  text-align: justify;
+}
+
+#coursework-section p {
+  line-height: 1.6; /* Improves text readability */
+  color: #000
+}
+
+#coursework-section {
+margin-top: -20px; /* Reduce the space above the heading */
+}
+
+
+/* Contact Me Section */
+#contact-me-section {
+    display: flex; /* Flexbox layout for the heading and links */
+    align-items: baseline; /* Vertically aligns the heading and links */
+    justify-content: left;/* Aligns everything to the left */
+    gap: 20px; /* Adds space between the heading and the links */
+    margin-top: 0px;
+    margin-left: 50px;
+    text-align: left;
+    flex-wrap: wrap; /* Prevents items from wrapping onto the next line */
+}
+
+#contact-me-section h2 {
+    font-size: 24px;
+    margin: 0; /* Removes extra spacing */
+    flex-shrink: 0; /* Ensures the heading does not shrink */
+}
+
+#contact-me-section ul {
+    display: flex; /* Flexbox for the links */
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* Adds space between the links */
+    flex-wrap: nowrap; /* Ensures the links stay on the same line */
+}
+
+#contact-me-section li {
+    margin: 0; /* Removes default margin */
+}
+
+#contact-me-section a {
+    text-decoration: none; /* Removes underline */
+    color: #0077b5; /* Link color */
+    font-size: 18px;
+}
+
+#contact-me-section a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+}
+body {
+    font-family: "Times New Roman", Times, serif; /* Consistent font across the page */
+    font-size: 16px; /* Consistent text size */
+    color: #000; /* Black color for all text */
+    line-height: 1.8; /* Improves readability */
+}
